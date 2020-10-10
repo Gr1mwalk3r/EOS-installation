@@ -1,0 +1,2841 @@
+############## /home/liveuser/endeavour-install.log
+############## Install started (UTC): 2020-10-10 13:07
+
+13:07:26 [6]: Calamares::Settings::Settings(const QString&, bool)
+    Using Calamares settings file at "/usr/share/calamares/settings.conf" 
+13:07:26 [6]: void Logger::setupLogfile()
+    Using log file: "/root/.cache/calamares/session.log" 
+13:07:26 [6]: void CalamaresApplication::init()
+    Calamares version: 3.2.26 
+13:07:26 [6]: void CalamaresApplication::init()
+            languages: "ar, as, ast, be, bg, ca, cs_CZ, da, de, el, en, en_GB, eo, es, es_MX, es_PR, et, eu, fi_FI, fr, gl, he, hi, hr, hu, id, is, it_IT, ja, ko, lt, ml, mr, nb, nl, pl, pt_BR, pt_PT, ro, ru, sk, sl, sq, sr, sr@latin, sv, th, tr_TR, uk, zh_CN, zh_TW" 
+13:07:26 [6]: bool CalamaresUtils::initQmlModulesDir()
+    Using Calamares QML directory "/usr/share/calamares/qml" 
+13:07:26 [6]: Calamares::Branding::Branding(const QString&, QObject*)
+    Using Calamares branding file at "/usr/share/calamares/branding/endeavouros/branding.desc" 
+13:07:26 [2]: void Calamares::flavorAndSide(const YAML::Node&, const char*, Calamares::Branding::PanelFlavor&, Calamares::Branding::PanelSide&)
+    WARNING:Branding setting for navigation is missing, using "widget" "bottom" 
+13:07:26 [6]: Calamares::Branding::Branding(const QString&, QObject*)
+    Loaded branding component "endeavouros" 
+13:07:26 [6]:  ..  Loaded QRC translation "tz_" "en_US" 
+13:07:26 [6]:  ..  Loaded QRC translation "calamares_" "en_US" 
+13:07:26 [6]: void CalamaresApplication::init()
+    STARTUP: initSettings, initQmlPath, initBranding done 
+13:07:26 [6]: void CalamaresApplication::init()
+    STARTUP: initModuleManager: module init started 
+13:07:26 [6]: void Calamares::ModuleManager::doInit()
+    Found 51 modules 51 names 
+13:07:26 [6]: void CalamaresApplication::initView()
+    STARTUP: initModuleManager: all modules init done 
+13:07:26 [6]: void CalamaresApplication::initView()
+    STARTUP: initJobQueue done 
+13:07:26 [6]: CalamaresWindow::CalamaresWindow(QWidget*)
+    Available desktop QSize(1366, 734) minimum size QSize(1024, 520) 
+13:07:26 [6]:  ..  Proposed window size: 1200 700 
+13:07:27 [6]: void CalamaresApplication::initView()
+    STARTUP: CalamaresWindow created; loadModules started 
+13:07:27 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/welcome.conf" 
+13:07:27 [6]: void Config::initLanguages()
+    Matching locale QLocale(English, Latin, United States) 
+13:07:27 [6]:  ..  Matched with index 10 "en_US" 
+13:07:27 [6]:  ..  Branding using default, system locale not found: "en_US" 
+13:07:27 [6]:  ..  Loaded QRC translation "tz_" "en_US" 
+13:07:27 [6]:  ..  Loaded QRC translation "calamares_" "en_US" 
+13:07:27 [6]: void Config::setLocaleIndex(int)
+    Index 10 Selected locale QLocale(English, Latin, United States) 
+13:07:27 [6]:  ..  Branding using default, system locale not found: "en_US" 
+13:07:27 [6]:  ..  Loaded QRC translation "tz_" "en_US" 
+13:07:27 [6]:  ..  Loaded QRC translation "calamares_" "en_US" 
+13:07:28 [6]: QStringList CalamaresUtils::GeoIP::getElementTexts(const QByteArray&, const QString&)
+    GeoIP found 1 elements 
+13:07:28 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "welcome@welcome" loading complete. 
+13:07:28 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/locale.conf" 
+13:07:28 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "locale@locale" loading complete. 
+13:07:28 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/keyboard.conf" 
+13:07:29 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "keyboard@keyboard" loading complete. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/partition.conf" 
+13:07:29 [6]: CalamaresUtils::Partition::InternalManager::InternalManager()
+    KPMCore backend starting .. 
+13:07:29 [8]: Loaded backend plugin:  "pmsfdiskbackendplugin"
+13:07:29 [6]:  ..  Backend @ 0x5595d5c39e50 "pmsfdiskbackendplugin" "1" 
+13:07:29 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 1 created. 
+13:07:29 [6]: virtual void PartitionViewStep::setConfigurationMap(const QVariantMap&)
+    Setting firmwareType to "efi" 
+13:07:29 [2]: virtual void PartitionViewStep::setConfigurationMap(const QVariantMap&)
+    WARNING:Partition-module does not support *userSwapChoices* setting "file" 
+13:07:29 [2]: virtual void PartitionViewStep::setConfigurationMap(const QVariantMap&)
+    WARNING:Partition-module does not support *userSwapChoices* setting "reuse" 
+13:07:29 [6]: QString PartUtils::findFS(QString, FileSystem::Type*)
+    Found filesystem "ext4" 
+13:07:29 [6]: virtual void PartitionViewStep::setConfigurationMap(const QVariantMap&)
+    Partition-module setting *defaultFileSystemType* "ext4" 
+13:07:29 [6]: QString PartUtils::findFS(QString, FileSystem::Type*)
+    Found filesystem "ext4" 
+13:07:29 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "partition@partition" loading complete. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/users.conf" 
+13:07:29 [6]:  ..  minLength set to 1 
+13:07:29 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "users@users" loading complete. 
+13:07:29 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "summary@summary" loading complete. 
+13:07:29 [6]: void Calamares::ModuleManager::loadModules()
+    Module "partition@partition" already loaded. 
+13:07:29 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+    QML import paths: 
+     "/usr/share/calamares/qml" 
+     "/usr/bin" 
+     "qrc:/qt-project.org/imports" 
+     "/usr/lib/qt/qml" 
+13:07:29 [6]: Calamares::SlideshowQML::SlideshowQML(QWidget*)
+    QML load on startup, API 2. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/mount.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/unpackfs.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    No config file for "get_root_username" found anywhere at 
+     "/root/src/modules/get_root_username/get_root_username.conf" 
+     "/etc/calamares/modules/get_root_username.conf" 
+     "/usr/share/calamares/modules/get_root_username.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    No config file for "copy_kernel" found anywhere at 
+     "/root/src/modules/copy_kernel/copy_kernel.conf" 
+     "/etc/calamares/modules/copy_kernel.conf" 
+     "/usr/share/calamares/modules/copy_kernel.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/machineid.conf" 
+13:07:29 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "machineid@machineid" loading complete. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/fstab.conf" 
+13:07:29 [6]: void Calamares::ModuleManager::loadModules()
+    Module "locale@locale" already loaded. 
+13:07:29 [6]: void Calamares::ModuleManager::loadModules()
+    Module "keyboard@keyboard" already loaded. 
+13:07:29 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "luksbootkeyfile@luksbootkeyfile" loading complete. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/luksopenswaphookcfg.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    No config file for "initcpiocfg" found anywhere at 
+     "/root/src/modules/initcpiocfg/initcpiocfg.conf" 
+     "/etc/calamares/modules/initcpiocfg.conf" 
+     "/usr/share/calamares/modules/initcpiocfg.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/initcpio.conf" 
+13:07:29 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "initcpio@initcpio" loading complete. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/removeuser.conf" 
+13:07:29 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "removeuser@removeuser" loading complete. 
+13:07:29 [6]: void Calamares::ModuleManager::loadModules()
+    Module "users@users" already loaded. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/packages.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/displaymanager.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/grubcfg.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/bootloader.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/shellprocess.conf" 
+13:07:29 [6]: virtual void Calamares::CppJobModule::loadSelf()
+    CppJobModule "shellprocess@shellprocess" loading complete. 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/umount.conf" 
+13:07:29 [6]: void Calamares::Module::loadConfigurationFile(const QString&)
+    Loaded module configuration "/usr/share/calamares/modules/finished.conf" 
+13:07:29 [6]: virtual void Calamares::ViewModule::loadSelf()
+    ViewModule "finished@finished" loading complete. 
+13:07:29 [6]: void CalamaresApplication::initViewSteps()
+    STARTUP: loadModules for all modules done 
+13:07:29 [6]: void Calamares::ModuleManager::checkRequirements()
+    Checking module requirements .. 
+13:07:29 [6]: void CalamaresApplication::initViewSteps()
+    STARTUP: Window now visible and ProgressTreeView populated 
+13:07:29 [6]:  ..  8 view steps loaded. 
+13:07:30 [6]: KeyboardPage::onListVariantCurrentItemChanged(QListWidgetItem*, QListWidgetItem*)::<lambda()>
+    xkbmap selection changed to:  "us" - "" 
+13:07:30 [6]: setGeoIP(Config*, const QVariantMap&)::<lambda()>
+    GeoIP result for welcome= "DE" 
+13:07:30 [6]: void Config::setLocaleIndex(int)
+    Index 8 Selected locale QLocale(German, Latin, Germany) 
+13:07:30 [6]:  ..  Branding using default, system locale not found: "de_DE" 
+13:07:30 [6]:  ..  No translation for "tz_" "de_DE" using default (en) 
+13:07:30 [6]:  ..  Loaded QRC translation "calamares_" "de_DE" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "bootloader" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "copy_kernel" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "displaymanager" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "finished" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "fstab" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "get_root_username" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "grubcfg" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "hwclock" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "initcpio" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "initcpiocfg" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "keyboard" 
+13:07:30 [6]: QStringList CalamaresUtils::GeoIP::getElementTexts(const QByteArray&, const QString&)
+    GeoIP found 1 elements 
+13:07:30 [6]: CalamaresUtils::GeoIP::RegionZonePair CalamaresUtils::GeoIP::splitTZString(const QString&)
+    GeoIP reporting "Europe/Berlin" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "locale" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "localecfg" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "luksbootkeyfile" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "luksopenswaphookcfg" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "machineid" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "mount" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "networkcfg" 
+13:07:30 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "packages" 
+13:07:30 [6]: void Calamares::SlideshowQML::loadQmlV2Complete()
+    QML component complete, API 2 
+13:07:31 [8]: getting temp failed for  "/dev/sdb" :  Success
+13:07:31 [6]: QList<Device*> PartUtils::getDevices(PartUtils::DeviceType, qint64)
+    Removing unsuitable devices: 2 candidates. 
+13:07:31 [6]: void PartitionCoreModule::doInit()
+    LIST OF DETECTED DEVICES: 
+13:07:31 [6]: void PartitionCoreModule::doInit()
+    node	capacity	name	prettyName 
+13:07:31 [6]: void PartitionCoreModule::doInit()
+    "/dev/sda" 256052966400 "SAMSUNG MZNLN256HAJQ-000H1" "SAMSUNG MZNLN256HAJQ-000H1 – 238,47 GiB (/dev/sda)" 
+13:07:31 [6]: void PartitionCoreModule::doInit()
+    "/dev/sdb" 15685608960 "Extreme" "Extreme – 14,61 GiB (/dev/sdb)" 
+13:07:31 [6]:  ..  2 devices detected. 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("blkid", "-s", "TYPE", "-o", "value", "/dev/sda2") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("blkid", "-s", "TYPE", "-o", "value", "/dev/sda2") output:
+ ext4
+13:07:34 [6]: FstabEntryList PartUtils::lookForFstabEntries(const QString&)
+    Checking device "/dev/sda2" for fstab (fs= "ext4" ) 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-o", "ro,noload", "/dev/sda2", "/tmp/calamares-LUfnbM") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-o", "ro,noload", "/dev/sda2", "/tmp/calamares-LUfnbM") output:
+ 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+13:07:34 [6]:  ..  reading "/tmp/calamares-LUfnbM/etc/fstab" 
+13:07:34 [6]:  ..  got 12 lines. 
+13:07:34 [6]:  ..  got 12 fstab entries. 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("umount", "-R", "/tmp/calamares-LUfnbM") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("umount", "-R", "/tmp/calamares-LUfnbM") output:
+ 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+13:07:34 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+13:07:34 [6]: bool PartUtils::canBeResized(PartitionCoreModule*, const QString&)
+    Checking if "/dev/sda2" can be resized. 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Checking if "/dev/sda2" can be resized. 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Partition "/dev/sda2" authorized for resize + autopartition install. 
+13:07:34 [6]: OsproberEntryList PartUtils::runOsprober(PartitionCoreModule*)
+    os-prober lines after cleanup: 
+     "/dev/sda2:Manjaro Linux (20.1.1):ManjaroLinux:linux" 
+13:07:34 [6]: void BootLoaderModel::init(const QList<Device*>&)
+    BLM::init with 2 devices 0 rows 
+13:07:34 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+13:07:34 [6]:  ..  flags QFlags() 
+13:07:34 [6]:  ..  moved towards root 0x7f2690040170 
+13:07:34 [6]:  ..  partition table 0x7f2690040170 type 6 
+13:07:34 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda1" "/dev/sda" 
+13:07:34 [6]:  ..  flags QFlags(0x1) 
+13:07:34 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda2" "/dev/sda" 
+13:07:34 [6]:  ..  flags QFlags() 
+13:07:34 [6]:  ..  moved towards root 0x7f2690040170 
+13:07:34 [6]:  ..  partition table 0x7f2690040170 type 6 
+13:07:34 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda3" "/dev/sda" 
+13:07:34 [6]:  ..  flags QFlags() 
+13:07:34 [6]:  ..  moved towards root 0x7f2690040170 
+13:07:34 [6]:  ..  partition table 0x7f2690040170 type 6 
+13:07:34 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+13:07:34 [6]:  ..  flags QFlags() 
+13:07:34 [6]:  ..  moved towards root 0x7f2690040170 
+13:07:34 [6]:  ..  partition table 0x7f2690040170 type 6 
+13:07:34 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+13:07:34 [6]:  ..  flags QFlags() 
+13:07:34 [6]:  ..  moved towards root 0x7f2690047710 
+13:07:34 [6]:  ..  partition table 0x7f2690047710 type 6 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "removeuser" 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 1 requirement results from "partition" 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "shellprocess" 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "summary" 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "umount" 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "unpackfs" 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 0 requirement results from "users" 
+13:07:34 [6]: Calamares::RequirementsList GeneralRequirements::checkRequirements()
+    Need at least storage bytes: 5905580032 
+13:07:34 [6]: Calamares::RequirementsList GeneralRequirements::checkRequirements()
+    Need at least ram bytes: 1073741824 
+13:07:34 [6]: bool GeneralRequirements::checkHasPower()
+    A battery exists, checking for mains power. 
+13:07:34 [6]: Calamares::RequirementsList GeneralRequirements::checkRequirements()
+    GeneralRequirements output: 
+     enoughStorage :   true 
+     enoughRam :   true 
+     hasPower :   true 
+     hasInternet :   true 
+     isRoot :   true 
+13:07:34 [6]: void Calamares::RequirementsChecker::addCheckedRequirements(Calamares::Module*)
+    Got 6 requirement results from "welcome" 
+13:07:34 [6]:  ..  Loading "/usr/share/calamares/branding/endeavouros/show.qml" 
+13:07:34 [6]: void ChoicePage::updateDeviceStatePreview()
+    Updating partitioning state widgets. 
+13:07:34 [6]: void ChoicePage::setupActions()
+    Setting up actions for "/dev/sda" with 1 entries. 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Checking if "/dev/sda" can be resized. 
+13:07:34 [6]:  ..  NO, filesystem "unknown" does not support resize. 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Checking if "/dev/sda" can be replaced. 
+13:07:34 [6]:  ..  NO, insufficient storage 
+     Required  storage B: 6442450944 "(5.5GiB)" 
+     Available storage B: 1048576 "(0GiB)" 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Checking if "/dev/sda1" can be resized. 
+13:07:34 [6]:  ..  NO, filesystem "fat32" does not support resize. 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Checking if "/dev/sda1" can be replaced. 
+13:07:34 [6]:  ..  NO, insufficient storage 
+     Required  storage B: 6442450944 "(5.5GiB)" 
+     Available storage B: 314572800 "(0GiB)" 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Checking if "/dev/sda2" can be resized. 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Partition "/dev/sda2" authorized for resize + autopartition install. 
+13:07:34 [6]:  ..  contains resizable "/dev/sda2" 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Checking if "/dev/sda2" can be replaced. 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Partition "/dev/sda2" authorized for replace install. 
+13:07:34 [6]:  ..  contains replaceable "/dev/sda2" 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Checking if "/dev/sda3" can be resized. 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Partition "/dev/sda3" authorized for resize + autopartition install. 
+13:07:34 [6]:  ..  contains resizable "/dev/sda3" 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Checking if "/dev/sda3" can be replaced. 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Partition "/dev/sda3" authorized for replace install. 
+13:07:34 [6]:  ..  contains replaceable "/dev/sda3" 
+13:07:34 [6]: bool PartUtils::canBeResized(Partition*)
+    Checking if "/dev/sda" can be resized. 
+13:07:34 [6]:  ..  NO, filesystem "unknown" does not support resize. 
+13:07:34 [6]: bool PartUtils::canBeReplaced(Partition*)
+    Checking if "/dev/sda" can be replaced. 
+13:07:34 [6]:  ..  NO, insufficient storage 
+     Required  storage B: 6442450944 "(5.5GiB)" 
+     Available storage B: 7531008 "(0GiB)" 
+13:07:34 [6]: ChoicePage::setupActions()::<lambda()>
+    Setting texts for 1 non-empty osprober entry 
+13:07:34 [6]: void ChoicePage::updateActionChoicePreview(ChoicePage::InstallChoice)
+    Updating partitioning preview widgets. 
+13:07:34 [6]: void Calamares::RequirementsChecker::finished()
+    All requirements have been checked. 
+13:07:34 [6]: void Calamares::RequirementsModel::describe() const
+    Requirements model has 7 items 
+13:07:34 [6]:  ..  requirement 0 "partitions" satisfied? true mandatory? true 
+13:07:34 [6]:  ..  requirement 1 "storage" satisfied? true mandatory? false 
+13:07:34 [6]:  ..  requirement 2 "ram" satisfied? true mandatory? true 
+13:07:34 [6]:  ..  requirement 3 "power" satisfied? true mandatory? false 
+13:07:34 [6]:  ..  requirement 4 "internet" satisfied? true mandatory? false 
+13:07:34 [6]:  ..  requirement 5 "root" satisfied? true mandatory? false 
+13:07:34 [6]:  ..  requirement 6 "screen" satisfied? true mandatory? false 
+13:07:37 [6]: void Config::setLocaleIndex(int)
+    Index 10 Selected locale QLocale(English, Latin, United States) 
+13:07:37 [6]:  ..  Branding using default, system locale not found: "en_US" 
+13:07:37 [6]:  ..  Loaded QRC translation "tz_" "en_US" 
+13:07:37 [6]:  ..  Loaded QRC translation "calamares_" "en_US" 
+13:07:37 [6]: ChoicePage::setupActions()::<lambda()>
+    Setting texts for 1 non-empty osprober entry 
+15:08:14 [8]: QML Component (default slideshow) Next slide
+15:08:17 [6]: void KeyboardPage::onActivate()
+    Got locale language "en_US.UTF-8" 
+15:08:17 [6]:  ..  extracted country "United States" :: ("en", "US") 
+15:08:17 [6]:  ..  looking for locale part "US" 
+15:08:17 [6]:  ..  matched "us" 
+15:08:17 [6]: void KeyboardPage::guessLayout(const QStringList&)
+    Next level: "en" 
+15:08:25 [6]: KeyboardPage::onListVariantCurrentItemChanged(QListWidgetItem*, QListWidgetItem*)::<lambda()>
+    xkbmap selection changed to:  "de" - "" 
+15:08:30 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 2 created. 
+15:08:30 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+    CreatePartitionTableJob::createTable trying to make table for device "/dev/sda" 
+15:08:30 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:30 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:30 [6]:  ..  flags QFlags() 
+15:08:30 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:30 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:30 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:30 [6]:  ..  flags QFlags() 
+15:08:30 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:30 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:30 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:30 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 3 created. 
+15:08:30 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 4 created. 
+15:08:30 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:30 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:30 [6]:  ..  flags QFlags() 
+15:08:30 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:30 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:30 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:30 [6]:  ..  flags QFlags() 
+15:08:30 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:30 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:30 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:30 [6]:  ..  flags QFlags() 
+15:08:30 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:30 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:30 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:30 [6]:  ..  flags QFlags() 
+15:08:30 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:30 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:30 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:30 [2]: QList<Partition*> PartitionLayout::execute(Device*, qint64, qint64, QString, PartitionNode*, const PartitionRole&)
+    WARNING:Ignoring attributes; requires KPMcore >= 4.2.0. 
+15:08:30 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 5 created. 
+15:08:30 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:31 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:31 [6]:  ..  flags QFlags() 
+15:08:31 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:31 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:31 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:31 [6]:  ..  flags QFlags() 
+15:08:31 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:31 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:31 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:31 [6]:  ..  flags QFlags() 
+15:08:31 [6]:  ..  moved towards root 0x5595d55144b0 
+15:08:31 [6]:  ..  partition table 0x5595d55144b0 type 6 
+15:08:31 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:31 [6]:  ..  flags QFlags() 
+15:08:31 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:31 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:31 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    # Queue: 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    ## Device: "SAMSUNG MZNLN256HAJQ-000H1" 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new gpt partition table on /dev/sda." 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new 300MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system fat32." 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Set flags on 300MiB fat32 partition." 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new 243889MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system ext4." 
+15:08:31 [6]: void PartitionCoreModule::dumpQueue() const
+    ## Device: "Extreme" 
+15:08:31 [6]: void ChoicePage::updateActionChoicePreview(ChoicePage::InstallChoice)
+    Updating partitioning preview widgets. 
+15:08:36 [6]: CalamaresUtils::Partition::KPMManager::~KPMManager()
+    KPMManager 5 being destroyed. 
+15:08:36 [6]: CalamaresUtils::Partition::KPMManager::~KPMManager()
+    KPMManager 4 being destroyed. 
+15:08:36 [6]: CalamaresUtils::Partition::KPMManager::~KPMManager()
+    KPMManager 3 being destroyed. 
+15:08:36 [6]: CalamaresUtils::Partition::KPMManager::~KPMManager()
+    KPMManager 2 being destroyed. 
+15:08:36 [6]: void ChoicePage::updateActionChoicePreview(ChoicePage::InstallChoice)
+    Updating partitioning preview widgets. 
+15:08:37 [6]: void BootLoaderModel::init(const QList<Device*>&)
+    BLM::init with 2 devices 4 rows 
+15:08:37 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f269404cf60 
+15:08:37 [6]:  ..  partition table 0x7f269404cf60 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda1" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags(0x1) 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda2" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f269404cf60 
+15:08:37 [6]:  ..  partition table 0x7f269404cf60 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda3" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f269404cf60 
+15:08:37 [6]:  ..  partition table 0x7f269404cf60 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f269404cf60 
+15:08:37 [6]:  ..  partition table 0x7f269404cf60 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:37 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:37 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 2 created. 
+15:08:37 [6]: PartitionTable* CreatePartitionTableJob::createTable()
+    CreatePartitionTableJob::createTable trying to make table for device "/dev/sda" 
+15:08:37 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:37 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:37 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:37 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 3 created. 
+15:08:37 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 4 created. 
+15:08:37 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:37 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:37 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:37 [6]: qint64 PartitionActions::swapSuggestion(qint64, PartitionActions::Choices::SwapChoice)
+    Suggested swap size: 8.8 GiB 
+15:08:37 [2]: QList<Partition*> PartitionLayout::execute(Device*, qint64, qint64, QString, PartitionNode*, const PartitionRole&)
+    WARNING:Ignoring attributes; requires KPMcore >= 4.2.0. 
+15:08:37 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 5 created. 
+15:08:37 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 2 rows 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:37 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:37 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:37 [6]: CalamaresUtils::Partition::KPMManager::KPMManager()
+    KPMManager 6 created. 
+15:08:37 [6]: void BootLoaderModel::update()
+    BLM::update holds 2 devices 4 rows 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/dev/sda" "/dev/sda" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x5595d5c1ee40 
+15:08:37 [6]:  ..  partition table 0x5595d5c1ee40 type 6 
+15:08:37 [6]: bool PartUtils::isEfiBootable(const Partition*)
+    Check EFI bootable "/run/archiso/bootmnt" "/dev/sdb" 
+15:08:37 [6]:  ..  flags QFlags() 
+15:08:37 [6]:  ..  moved towards root 0x7f2690047710 
+15:08:37 [6]:  ..  partition table 0x7f2690047710 type 6 
+15:08:37 [2]: void PartitionCoreModule::scanForEfiSystemPartitions()
+    WARNING:system is EFI but no EFI system partitions found. 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    # Queue: 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    ## Device: "SAMSUNG MZNLN256HAJQ-000H1" 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new gpt partition table on /dev/sda." 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new 300MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system fat32." 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Set flags on 300MiB fat32 partition." 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new 234877MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system ext4." 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    - "Create new 9011MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system linuxswap." 
+15:08:37 [6]: void PartitionCoreModule::dumpQueue() const
+    ## Device: "Extreme" 
+15:08:54 [8]: QML Component (default slideshow) Next slide
+15:09:34 [8]: QML Component (default slideshow) Next slide
+15:09:45 [0]: QLayout: Attempting to add QLayout "" to QWidget "", which already has a layout
+15:09:45 [0]: QObject::setParent: Cannot set parent, new parent is in a different thread
+15:09:45 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+15:09:45 [6]:  ..  partitions on "/dev/sda" 
+15:09:45 [6]:  ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     uuid :   "" 
+     claimed :   "false" 
+15:09:45 [6]:  ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     uuid :   "" 
+     claimed :   "true" 
+15:09:45 [6]:  ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "/" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     uuid :   "" 
+     claimed :   "true" 
+15:09:45 [6]:  ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     uuid :   "" 
+     claimed :   "true" 
+15:09:45 [6]:  ..  partitions on "/dev/sdb" 
+15:09:45 [6]:  ..  mapping for "/dev/sdb1" "/dev/sdb1" 
+     partlabel :   "Main Data Partition" 
+     partuuid :   "7DC25265-469D-4D28-B058-7A9D93D8370D" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     uuid :   "A480-750E" 
+     claimed :   "false" 
+15:09:45 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+15:09:45 [6]:  ..  partitions on "/dev/sda" 
+15:09:45 [6]:  ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     uuid :   "" 
+     claimed :   "false" 
+15:09:45 [6]:  ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     uuid :   "" 
+     claimed :   "true" 
+15:09:45 [6]:  ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "/" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     uuid :   "" 
+     claimed :   "true" 
+15:09:45 [6]:  ..  mapping for "" "New Partition" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     uuid :   "" 
+     claimed :   "true" 
+15:09:45 [6]:  ..  partitions on "/dev/sdb" 
+15:09:45 [6]:  ..  mapping for "/dev/sdb1" "/dev/sdb1" 
+     partlabel :   "Main Data Partition" 
+     partuuid :   "7DC25265-469D-4D28-B058-7A9D93D8370D" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     uuid :   "A480-750E" 
+     claimed :   "false" 
+15:10:14 [8]: QML Component (default slideshow) Next slide
+15:10:54 [8]: QML Component (default slideshow) Next slide
+15:11:34 [8]: QML Component (default slideshow) Next slide
+15:12:14 [8]: QML Component (default slideshow) Next slide
+15:12:54 [8]: QML Component (default slideshow) Next slide
+15:13:34 [8]: QML Component (default slideshow) Next slide
+15:14:14 [8]: QML Component (default slideshow) Next slide
+15:14:54 [8]: QML Component (default slideshow) Next slide
+15:15:34 [8]: QML Component (default slideshow) Next slide
+15:16:14 [8]: QML Component (default slideshow) Next slide
+15:16:54 [8]: QML Component (default slideshow) Next slide
+15:17:34 [8]: QML Component (default slideshow) Next slide
+15:18:14 [8]: QML Component (default slideshow) Next slide
+15:18:54 [8]: QML Component (default slideshow) Next slide
+15:19:34 [8]: QML Component (default slideshow) Next slide
+15:20:14 [8]: QML Component (default slideshow) Next slide
+15:20:52 [8]: QML Component (default slideshow) activated
+15:20:52 [8]: [JOBQUEUE]: Progress for Job[ 0 ]:  0 % completed 
+15:20:52 [8]: [JOBQUEUE]: Progress Overall:  0 % (accumulated) +  0 % (this job) =  0 % (total) 
+15:20:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Clear all temporary mounts."  (there are 34  left) 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    Opened mtab. Lines: 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "sys /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "dev /dev devtmpfs rw,nosuid,relatime,size=3771696k,nr_inodes=942924,mode=755 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "run /run tmpfs rw,nosuid,nodev,relatime,mode=755 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "efivarfs /sys/firmware/efi/efivars efivarfs rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "/dev/sdb1 /run/archiso/bootmnt vfat ro,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cowspace /run/archiso/cowspace tmpfs rw,relatime,size=10485760k,mode=755 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "/dev/loop0 /run/archiso/sfs/airootfs squashfs ro,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "airootfs / overlay rw,relatime,lowerdir=/run/archiso/sfs/airootfs,upperdir=/run/archiso/cowspace/persistent_ENDEAVOUROS/x86_64/upperdir,workdir=/run/archiso/cowspace/persistent_ENDEAVOUROS/x86_64/workdir 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "securityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "tmpfs /dev/shm tmpfs rw,nosuid,nodev 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "tmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,size=4096k,nr_inodes=1024,mode=755 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup2 /sys/fs/cgroup/unified cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,xattr,name=systemd 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "none /sys/fs/bpf bpf rw,nosuid,nodev,noexec,relatime,mode=700 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/net_cls,net_prio cgroup rw,nosuid,nodev,noexec,relatime,net_cls,net_prio 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/devices cgroup rw,nosuid,nodev,noexec,relatime,devices 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/rdma cgroup rw,nosuid,nodev,noexec,relatime,rdma 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/cpu,cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/memory cgroup rw,nosuid,nodev,noexec,relatime,memory 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/blkio cgroup rw,nosuid,nodev,noexec,relatime,blkio 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/pids cgroup rw,nosuid,nodev,noexec,relatime,pids 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/perf_event cgroup rw,nosuid,nodev,noexec,relatime,perf_event 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/hugetlb cgroup rw,nosuid,nodev,noexec,relatime,hugetlb 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "cgroup /sys/fs/cgroup/cpuset cgroup rw,nosuid,nodev,noexec,relatime,cpuset 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16832 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "hugetlbfs /dev/hugepages hugetlbfs rw,relatime,pagesize=2M 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "tmpfs /tmp tmpfs rw,nosuid,nodev,size=3799044k,nr_inodes=409600 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "tracefs /sys/kernel/tracing tracefs rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "configfs /sys/kernel/config configfs rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "tmpfs /run/user/1000 tmpfs rw,nosuid,nodev,relatime,size=759808k,nr_inodes=189952,mode=700,uid=1000,gid=985 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "fusectl /sys/fs/fuse/connections fusectl rw,nosuid,nodev,noexec,relatime 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    "gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=985 0 0" 
+15:20:52 [6]: virtual Calamares::JobResult ClearTempMountsJob::exec()
+    ClearTempMountsJob finished. Here's what was done:
+ "" 
+15:20:52 [8]: [JOBQUEUE]: Progress for Job[ 0 ]:  100 % completed 
+15:20:52 [8]: [JOBQUEUE]: Progress Overall:  0 % (accumulated) +  2.22222 % (this job) =  2.22222 % (total) 
+15:20:52 [8]: [JOBQUEUE]: Progress for Job[ 1 ]:  0 % completed 
+15:20:52 [8]: [JOBQUEUE]: Progress Overall:  2.22222 % (accumulated) +  0 % (this job) =  2.22222 % (total) 
+15:20:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Clear mounts for partitioning operations on /dev/sda"  (there are 34  left) 
+15:20:52 [6]: QStringList getPartitionsForDevice(const QString&)
+    Reading from "/proc/partitions" 
+15:20:52 [6]: virtual Calamares::JobResult ClearMountsJob::exec()
+    ClearMountsJob finished. Here's what was done:
+ "" 
+15:20:52 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:20:52 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:20:52 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:20:52 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:20:52 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:20:52 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:20:52 [8]: [JOBQUEUE]: Progress for Job[ 1 ]:  100 % completed 
+15:20:52 [8]: [JOBQUEUE]: Progress Overall:  2.22222 % (accumulated) +  2.22222 % (this job) =  4.44444 % (total) 
+15:20:52 [8]: [JOBQUEUE]: Progress for Job[ 2 ]:  0 % completed 
+15:20:52 [8]: [JOBQUEUE]: Progress Overall:  4.44444 % (accumulated) +  0 % (this job) =  4.44444 % (total) 
+15:20:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new gpt partition table on /dev/sda."  (there are 34  left) 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    Creating new partition table of type "gpt" , uncommitted yet: 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    "unallocated" 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    "New Partition" 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    "New Partition" 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    "New Partition" 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    lsblk:
+ "NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT\nloop0    7:0    0   1.7G  1 loop /run/archiso/sfs/airootfs\nsda      8:0    0 238.5G  0 disk \n\xE2\x94\x9C\xE2\x94\x80sda1   8:1    0   300M  0 part \n\xE2\x94\x9C\xE2\x94\x80sda2   8:2    0 229.4G  0 part \n\xE2\x94\x94\xE2\x94\x80sda3   8:3    0   8.8G  0 part \nsdb      8:16   0  14.6G  0 disk \n\xE2\x94\x94\xE2\x94\x80sdb1   8:17   0  14.6G  0 part /run/archiso/bootmnt\nsr0     11:0    1  1024M  0 rom  \n" 
+15:20:52 [6]: virtual Calamares::JobResult CreatePartitionTableJob::exec()
+    mount:
+ "proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)\nsys on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)\ndev on /dev type devtmpfs (rw,nosuid,relatime,size=3771696k,nr_inodes=942924,mode=755)\nrun on /run type tmpfs (rw,nosuid,nodev,relatime,mode=755)\nefivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)\n/dev/sdb1 on /run/archiso/bootmnt type vfat (ro,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro)\ncowspace on /run/archiso/cowspace type tmpfs (rw,relatime,size=10485760k,mode=755)\n/dev/loop0 on /run/archiso/sfs/airootfs type squashfs (ro,relatime)\nairootfs on / type overlay (rw,relatime,lowerdir=/run/archiso/sfs/airootfs,upperdir=/run/archiso/cowspace/persistent_ENDEAVOUROS/x86_64/upperdir,workdir=/run/archiso/cowspace/persistent_ENDEAVOUROS/x86_64/workdir)\nsecurityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)\ntmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)\ndevpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)\ntmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,size=4096k,nr_inodes=1024,mode=755)\ncgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)\ncgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)\npstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)\nnone on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)\ncgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)\ncgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)\ncgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)\ncgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)\ncgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)\ncgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)\ncgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)\ncgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)\ncgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)\ncgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)\ncgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)\nsystemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16832)\nhugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)\nmqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)\ndebugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)\ntmpfs on /tmp type tmpfs (rw,nosuid,nodev,size=3799044k,nr_inodes=409600)\ntracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)\nconfigfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)\ntmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=759808k,nr_inodes=189952,mode=700,uid=1000,gid=985)\nfusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)\ngvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=985)\n" 
+15:20:53 [8]: [JOBQUEUE]: Progress for Job[ 2 ]:  100 % completed 
+15:20:53 [8]: [JOBQUEUE]: Progress Overall:  4.44444 % (accumulated) +  2.22222 % (this job) =  6.66667 % (total) 
+15:20:53 [8]: [JOBQUEUE]: Progress for Job[ 3 ]:  0 % completed 
+15:20:53 [8]: [JOBQUEUE]: Progress Overall:  6.66667 % (accumulated) +  0 % (this job) =  6.66667 % (total) 
+15:20:53 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new 300MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system fat32."  (there are 34  left) 
+15:20:54 [8]: QML Component (default slideshow) Next slide
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 3 ]:  100 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  6.66667 % (accumulated) +  2.22222 % (this job) =  8.88889 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  0 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0 % (this job) =  8.88889 % (total) 
+15:20:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set flags on partition /dev/sda1."  (there are 34  left) 
+15:20:56 [6]: virtual Calamares::JobResult SetPartFlagsJob::exec()
+    Setting flags on "/dev/sda" partition "/dev/sda1" to QFlags(0x1) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  1 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.0222222 % (this job) =  8.91111 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  2 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.0444444 % (this job) =  8.93333 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  3 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.0666667 % (this job) =  8.95556 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  4 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.0888889 % (this job) =  8.97778 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  5 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.111111 % (this job) =  9 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  6 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.133333 % (this job) =  9.02222 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  7 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.155556 % (this job) =  9.04444 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  8 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.177778 % (this job) =  9.06667 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  9 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.2 % (this job) =  9.08889 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  10 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.222222 % (this job) =  9.11111 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  11 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.244444 % (this job) =  9.13333 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  12 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.266667 % (this job) =  9.15556 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  13 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.288889 % (this job) =  9.17778 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  14 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.311111 % (this job) =  9.2 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  15 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.333333 % (this job) =  9.22222 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  16 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.355556 % (this job) =  9.24444 % (total) 
+15:20:56 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  17 % completed 
+15:20:56 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.377778 % (this job) =  9.26667 % (total) 
+15:20:57 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  17 % completed 
+15:20:57 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  0.377778 % (this job) =  9.26667 % (total) 
+15:20:57 [8]: [JOBQUEUE]: Progress for Job[ 4 ]:  100 % completed 
+15:20:57 [8]: [JOBQUEUE]: Progress Overall:  8.88889 % (accumulated) +  2.22222 % (this job) =  11.1111 % (total) 
+15:20:57 [8]: [JOBQUEUE]: Progress for Job[ 5 ]:  0 % completed 
+15:20:57 [8]: [JOBQUEUE]: Progress Overall:  11.1111 % (accumulated) +  0 % (this job) =  11.1111 % (total) 
+15:20:57 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new 234877MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system ext4."  (there are 34  left) 
+15:21:04 [8]: [JOBQUEUE]: Progress for Job[ 5 ]:  100 % completed 
+15:21:04 [8]: [JOBQUEUE]: Progress Overall:  11.1111 % (accumulated) +  2.22222 % (this job) =  13.3333 % (total) 
+15:21:04 [8]: [JOBQUEUE]: Progress for Job[ 6 ]:  0 % completed 
+15:21:04 [8]: [JOBQUEUE]: Progress Overall:  13.3333 % (accumulated) +  0 % (this job) =  13.3333 % (total) 
+15:21:04 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create new 9011MiB partition on /dev/sda (SAMSUNG MZNLN256HAJQ-000H1) with file system linuxswap."  (there are 34  left) 
+15:21:07 [8]: [JOBQUEUE]: Progress for Job[ 6 ]:  100 % completed 
+15:21:07 [8]: [JOBQUEUE]: Progress Overall:  13.3333 % (accumulated) +  2.22222 % (this job) =  15.5556 % (total) 
+15:21:07 [8]: [JOBQUEUE]: Progress for Job[ 7 ]:  0 % completed 
+15:21:07 [8]: [JOBQUEUE]: Progress Overall:  15.5556 % (accumulated) +  0 % (this job) =  15.5556 % (total) 
+15:21:07 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set partition information"  (there are 34  left) 
+15:21:07 [6]: QVariantList FillGlobalStorageJob::createPartitionList() const
+    Building partition information map 
+15:21:07 [6]:  ..  partitions on "/dev/sda" 
+15:21:07 [6]:  ..  mapping for "" "unallocated" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "" 
+     fs: :   "unknown" 
+     fsName :   "unknown" 
+     uuid :   "" 
+     claimed :   "false" 
+15:21:07 [6]:  ..  mapping for "/dev/sda1" "/dev/sda1" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "/boot/efi" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     uuid :   "5369-0754" 
+     claimed :   "true" 
+15:21:07 [6]:  ..  mapping for "/dev/sda2" "/dev/sda2" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "/" 
+     fs: :   "ext4" 
+     fsName :   "ext4" 
+     uuid :   "fac79f32-a775-47df-8bc1-5a4667791c10" 
+     claimed :   "true" 
+15:21:07 [6]:  ..  mapping for "/dev/sda3" "/dev/sda3" 
+     partlabel :   "" 
+     partuuid :   "" 
+     mountPoint: :   "" 
+     fs: :   "linuxswap" 
+     fsName :   "linuxswap" 
+     uuid :   "2579eb66-c182-49ca-acce-8f1977f3fa2c" 
+     claimed :   "true" 
+15:21:07 [6]:  ..  partitions on "/dev/sdb" 
+15:21:07 [6]:  ..  mapping for "/dev/sdb1" "/dev/sdb1" 
+     partlabel :   "Main Data Partition" 
+     partuuid :   "7DC25265-469D-4D28-B058-7A9D93D8370D" 
+     mountPoint: :   "" 
+     fs: :   "fat32" 
+     fsName :   "fat32" 
+     uuid :   "A480-750E" 
+     claimed :   "false" 
+15:21:07 [6]: virtual Calamares::JobResult FillGlobalStorageJob::exec()
+    Saving partition information map to GlobalStorage["partitions"] 
+15:21:07 [6]: virtual Calamares::JobResult FillGlobalStorageJob::exec()
+    FillGlobalStorageJob writing empty bootLoader value 
+15:21:07 [8]: [JOBQUEUE]: Progress for Job[ 7 ]:  100 % completed 
+15:21:07 [8]: [JOBQUEUE]: Progress Overall:  15.5556 % (accumulated) +  2.22222 % (this job) =  17.7778 % (total) 
+15:21:07 [8]: [JOBQUEUE]: Progress for Job[ 8 ]:  0 % completed 
+15:21:07 [8]: [JOBQUEUE]: Progress Overall:  17.7778 % (accumulated) +  0 % (this job) =  17.7778 % (total) 
+15:21:07 [6]: virtual void Calamares::JobThread::run()
+    Starting job "mount"  (there are 34  left) 
+15:21:08 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/mount/main.py" 
+15:21:08 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:21:08 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:21:08 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "mount" = "Mounting partitions." 
+15:21:08 [8]: [JOBQUEUE]: Progress for Job[ 8 ]:  0 % completed 
+15:21:08 [8]: [JOBQUEUE]: Progress Overall:  17.7778 % (accumulated) +  0 % (this job) =  17.7778 % (total) 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "ext4", "/dev/sda2", "/tmp/calamares-root-1dcubx_9/") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "ext4", "/dev/sda2", "/tmp/calamares-root-1dcubx_9/") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "vfat", "/dev/sda1", "/tmp/calamares-root-1dcubx_9/boot/efi") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "vfat", "/dev/sda1", "/tmp/calamares-root-1dcubx_9/boot/efi") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-o", "bind", "/dev", "/tmp/calamares-root-1dcubx_9/dev") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-o", "bind", "/dev", "/tmp/calamares-root-1dcubx_9/dev") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "proc", "proc", "/tmp/calamares-root-1dcubx_9/proc") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "proc", "proc", "/tmp/calamares-root-1dcubx_9/proc") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "tmpfs", "tmpfs", "/tmp/calamares-root-1dcubx_9/run") 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "tmpfs", "tmpfs", "/tmp/calamares-root-1dcubx_9/run") output:
+ 
+15:21:08 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-o", "bind", "/run/udev", "/tmp/calamares-root-1dcubx_9/run/udev") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-o", "bind", "/run/udev", "/tmp/calamares-root-1dcubx_9/run/udev") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "sysfs", "sys", "/tmp/calamares-root-1dcubx_9/sys") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "sysfs", "sys", "/tmp/calamares-root-1dcubx_9/sys") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "efivarfs", "efivarfs", "/tmp/calamares-root-1dcubx_9/sys/firmware/efi/efivars") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "efivarfs", "efivarfs", "/tmp/calamares-root-1dcubx_9/sys/firmware/efi/efivars") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:09 [8]: [JOBQUEUE]: Progress for Job[ 8 ]:  100 % completed 
+15:21:09 [8]: [JOBQUEUE]: Progress Overall:  17.7778 % (accumulated) +  2.22222 % (this job) =  20 % (total) 
+15:21:09 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  0 % completed 
+15:21:09 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0 % (this job) =  20 % (total) 
+15:21:09 [6]: virtual void Calamares::JobThread::run()
+    Starting job "unpackfs"  (there are 34  left) 
+15:21:09 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/unpackfs/main.py" 
+15:21:09 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:21:09 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:21:09 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "unpackfs" = "Filling up filesystems." 
+15:21:09 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  0 % completed 
+15:21:09 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0 % (this job) =  20 % (total) 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("mount", "-t", "squashfs", "-o", "loop", "/run/archiso/bootmnt/arch/x86_64/airootfs.sfs", "/tmp/tmpnnrkjlp7/airootfs") 
+15:21:09 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  0 % completed 
+15:21:09 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0 % (this job) =  20 % (total) 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mount", "-t", "squashfs", "-o", "loop", "/run/archiso/bootmnt/arch/x86_64/airootfs.sfs", "/tmp/tmpnnrkjlp7/airootfs") output:
+ mount: /tmp/tmpnnrkjlp7/airootfs: WARNING: source write-protected, mounted read-only.
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("udevadm", "settle") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("udevadm", "settle") output:
+ 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("sync") 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:21:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sync") output:
+ 
+15:21:10 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  0 % completed 
+15:21:10 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0 % (this job) =  20 % (total) 
+15:21:16 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  1.00003 % completed 
+15:21:16 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0.266675 % (this job) =  20.2667 % (total) 
+15:21:27 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  2.00006 % completed 
+15:21:27 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0.53335 % (this job) =  20.5333 % (total) 
+15:21:28 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  3.00009 % completed 
+15:21:28 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  0.800025 % (this job) =  20.8 % (total) 
+15:21:29 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  4.00012 % completed 
+15:21:29 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  1.0667 % (this job) =  21.0667 % (total) 
+15:21:30 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  5.00054 % completed 
+15:21:30 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  1.33348 % (this job) =  21.3335 % (total) 
+15:21:31 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  6.00057 % completed 
+15:21:31 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  1.60015 % (this job) =  21.6002 % (total) 
+15:21:32 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  7.0006 % completed 
+15:21:32 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  1.86683 % (this job) =  21.8668 % (total) 
+15:21:33 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  8.00063 % completed 
+15:21:33 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  2.1335 % (this job) =  22.1335 % (total) 
+15:21:34 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  9.00066 % completed 
+15:21:34 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  2.40018 % (this job) =  22.4002 % (total) 
+15:21:34 [8]: QML Component (default slideshow) Next slide
+15:21:35 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  10.0007 % completed 
+15:21:35 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  2.66685 % (this job) =  22.6669 % (total) 
+15:21:36 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  11.0007 % completed 
+15:21:36 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  2.93353 % (this job) =  22.9335 % (total) 
+15:21:37 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  12.0008 % completed 
+15:21:37 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  3.2002 % (this job) =  23.2002 % (total) 
+15:21:38 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  13.0008 % completed 
+15:21:38 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  3.46688 % (this job) =  23.4669 % (total) 
+15:21:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  14.0008 % completed 
+15:21:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  3.73355 % (this job) =  23.7336 % (total) 
+15:21:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  15.0008 % completed 
+15:21:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  4.00023 % (this job) =  24.0002 % (total) 
+15:21:57 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  16.0013 % completed 
+15:21:57 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  4.267 % (this job) =  24.267 % (total) 
+15:22:14 [8]: QML Component (default slideshow) Next slide
+15:22:25 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  17.0013 % completed 
+15:22:25 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  4.53368 % (this job) =  24.5337 % (total) 
+15:22:54 [8]: QML Component (default slideshow) Next slide
+15:22:59 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  18.0052 % completed 
+15:22:59 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  4.80138 % (this job) =  24.8014 % (total) 
+15:23:11 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  19.0052 % completed 
+15:23:11 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  5.06806 % (this job) =  25.0681 % (total) 
+15:23:17 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  20.0068 % completed 
+15:23:17 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  5.33515 % (this job) =  25.3351 % (total) 
+15:23:17 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  21.0068 % completed 
+15:23:17 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  5.60182 % (this job) =  25.6018 % (total) 
+15:23:17 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  22.0069 % completed 
+15:23:17 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  5.8685 % (this job) =  25.8685 % (total) 
+15:23:18 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  23.0069 % completed 
+15:23:18 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  6.13517 % (this job) =  26.1352 % (total) 
+15:23:18 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  24.0073 % completed 
+15:23:18 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  6.40195 % (this job) =  26.4019 % (total) 
+15:23:18 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  25.0089 % completed 
+15:23:18 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  6.66903 % (this job) =  26.669 % (total) 
+15:23:19 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  26.0089 % completed 
+15:23:19 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  6.93571 % (this job) =  26.9357 % (total) 
+15:23:20 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  27.0089 % completed 
+15:23:20 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  7.20238 % (this job) =  27.2024 % (total) 
+15:23:22 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  28.0097 % completed 
+15:23:22 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  7.46927 % (this job) =  27.4693 % (total) 
+15:23:23 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  29.0098 % completed 
+15:23:23 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  7.73594 % (this job) =  27.7359 % (total) 
+15:23:24 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  30.0098 % completed 
+15:23:24 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  8.00262 % (this job) =  28.0026 % (total) 
+15:23:26 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  31.0098 % completed 
+15:23:26 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  8.26929 % (this job) =  28.2693 % (total) 
+15:23:29 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  32.0099 % completed 
+15:23:29 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  8.53597 % (this job) =  28.536 % (total) 
+15:23:31 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  33.0099 % completed 
+15:23:31 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  8.80264 % (this job) =  28.8026 % (total) 
+15:23:33 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  34.0099 % completed 
+15:23:33 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  9.06931 % (this job) =  29.0693 % (total) 
+15:23:34 [8]: QML Component (default slideshow) Next slide
+15:23:36 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  35.01 % completed 
+15:23:36 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  9.33599 % (this job) =  29.336 % (total) 
+15:23:38 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  36.0154 % completed 
+15:23:38 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  9.60411 % (this job) =  29.6041 % (total) 
+15:23:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  37.0154 % completed 
+15:23:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  9.87078 % (this job) =  29.8708 % (total) 
+15:23:41 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  38.0155 % completed 
+15:23:41 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  10.1375 % (this job) =  30.1375 % (total) 
+15:23:44 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  39.0155 % completed 
+15:23:44 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  10.4041 % (this job) =  30.4041 % (total) 
+15:24:14 [8]: QML Component (default slideshow) Next slide
+15:24:27 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  40.0155 % completed 
+15:24:27 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  10.6708 % (this job) =  30.6708 % (total) 
+15:24:29 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  41.0156 % completed 
+15:24:29 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  10.9375 % (this job) =  30.9375 % (total) 
+15:24:31 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  42.0156 % completed 
+15:24:31 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  11.2042 % (this job) =  31.2042 % (total) 
+15:24:34 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  43.0156 % completed 
+15:24:34 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  11.4708 % (this job) =  31.4708 % (total) 
+15:24:35 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  44.0156 % completed 
+15:24:35 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  11.7375 % (this job) =  31.7375 % (total) 
+15:24:36 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  45.0157 % completed 
+15:24:36 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  12.0042 % (this job) =  32.0042 % (total) 
+15:24:36 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  46.0223 % completed 
+15:24:36 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  12.2726 % (this job) =  32.2726 % (total) 
+15:24:37 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  47.0223 % completed 
+15:24:37 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  12.5393 % (this job) =  32.5393 % (total) 
+15:24:37 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  48.0227 % completed 
+15:24:37 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  12.8061 % (this job) =  32.8061 % (total) 
+15:24:38 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  49.0231 % completed 
+15:24:38 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  13.0728 % (this job) =  33.0728 % (total) 
+15:24:38 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  50.0336 % completed 
+15:24:38 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  13.3423 % (this job) =  33.3423 % (total) 
+15:24:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  51.034 % completed 
+15:24:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  13.6091 % (this job) =  33.6091 % (total) 
+15:24:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  52.034 % completed 
+15:24:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  13.8757 % (this job) =  33.8757 % (total) 
+15:24:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  53.0341 % completed 
+15:24:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  14.1424 % (this job) =  34.1424 % (total) 
+15:24:40 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  54.0484 % completed 
+15:24:40 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  14.4129 % (this job) =  34.4129 % (total) 
+15:24:40 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  55.0484 % completed 
+15:24:40 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  14.6796 % (this job) =  34.6796 % (total) 
+15:24:41 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  56.0585 % completed 
+15:24:41 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  14.9489 % (this job) =  34.9489 % (total) 
+15:24:41 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  57.0651 % completed 
+15:24:41 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  15.2174 % (this job) =  35.2174 % (total) 
+15:24:42 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  58.069 % completed 
+15:24:42 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  15.4851 % (this job) =  35.4851 % (total) 
+15:24:42 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  59.098 % completed 
+15:24:42 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  15.7595 % (this job) =  35.7595 % (total) 
+15:24:42 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  60.1015 % completed 
+15:24:42 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  16.0271 % (this job) =  36.0271 % (total) 
+15:24:43 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  61.1019 % completed 
+15:24:43 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  16.2938 % (this job) =  36.2938 % (total) 
+15:24:43 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  62.1019 % completed 
+15:24:43 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  16.5605 % (this job) =  36.5605 % (total) 
+15:24:44 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  63.1019 % completed 
+15:24:44 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  16.8272 % (this job) =  36.8272 % (total) 
+15:24:45 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  64.102 % completed 
+15:24:45 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  17.0939 % (this job) =  37.0939 % (total) 
+15:24:45 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  65.102 % completed 
+15:24:45 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  17.3605 % (this job) =  37.3605 % (total) 
+15:24:46 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  66.102 % completed 
+15:24:46 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  17.6272 % (this job) =  37.6272 % (total) 
+15:24:46 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  67.1021 % completed 
+15:24:46 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  17.8939 % (this job) =  37.8939 % (total) 
+15:24:48 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  68.1021 % completed 
+15:24:48 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  18.1606 % (this job) =  38.1606 % (total) 
+15:24:49 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  69.1021 % completed 
+15:24:49 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  18.4272 % (this job) =  38.4272 % (total) 
+15:24:52 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  70.1022 % completed 
+15:24:52 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  18.6939 % (this job) =  38.6939 % (total) 
+15:24:54 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  71.1022 % completed 
+15:24:54 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  18.9606 % (this job) =  38.9606 % (total) 
+15:24:54 [8]: QML Component (default slideshow) Next slide
+15:25:01 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  72.1022 % completed 
+15:25:01 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  19.2273 % (this job) =  39.2273 % (total) 
+15:25:14 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  73.1023 % completed 
+15:25:14 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  19.4939 % (this job) =  39.4939 % (total) 
+15:25:20 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  74.1023 % completed 
+15:25:20 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  19.7606 % (this job) =  39.7606 % (total) 
+15:25:21 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  75.1023 % completed 
+15:25:21 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  20.0273 % (this job) =  40.0273 % (total) 
+15:25:23 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  76.1024 % completed 
+15:25:23 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  20.294 % (this job) =  40.294 % (total) 
+15:25:27 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  77.1028 % completed 
+15:25:27 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  20.5607 % (this job) =  40.5607 % (total) 
+15:25:30 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  78.1028 % completed 
+15:25:30 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  20.8274 % (this job) =  40.8274 % (total) 
+15:25:33 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  79.1028 % completed 
+15:25:33 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  21.0941 % (this job) =  41.0941 % (total) 
+15:25:34 [8]: QML Component (default slideshow) Next slide
+15:25:37 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  80.1029 % completed 
+15:25:37 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  21.3608 % (this job) =  41.3608 % (total) 
+15:25:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  81.1029 % completed 
+15:25:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  21.6274 % (this job) =  41.6274 % (total) 
+15:25:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  82.1029 % completed 
+15:25:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  21.8941 % (this job) =  41.8941 % (total) 
+15:25:39 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  83.1045 % completed 
+15:25:39 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  22.1612 % (this job) =  42.1612 % (total) 
+15:25:40 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  84.1045 % completed 
+15:25:40 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  22.4279 % (this job) =  42.4279 % (total) 
+15:25:41 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  85.1046 % completed 
+15:25:41 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  22.6945 % (this job) =  42.6945 % (total) 
+15:25:41 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  86.1046 % completed 
+15:25:41 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  22.9612 % (this job) =  42.9612 % (total) 
+15:25:42 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  87.1046 % completed 
+15:25:42 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  23.2279 % (this job) =  43.2279 % (total) 
+15:25:43 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  88.1047 % completed 
+15:25:43 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  23.4946 % (this job) =  43.4946 % (total) 
+15:25:43 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  89.1047 % completed 
+15:25:43 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  23.7612 % (this job) =  43.7612 % (total) 
+15:25:43 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  90.1047 % completed 
+15:25:43 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  24.0279 % (this job) =  44.0279 % (total) 
+15:25:46 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  91.1047 % completed 
+15:25:46 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  24.2946 % (this job) =  44.2946 % (total) 
+15:25:48 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  92.1048 % completed 
+15:25:48 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  24.5613 % (this job) =  44.5613 % (total) 
+15:25:48 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  93.1048 % completed 
+15:25:48 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  24.8279 % (this job) =  44.8279 % (total) 
+15:25:49 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  94.1048 % completed 
+15:25:49 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  25.0946 % (this job) =  45.0946 % (total) 
+15:25:49 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  95.1049 % completed 
+15:25:49 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  25.3613 % (this job) =  45.3613 % (total) 
+15:25:49 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  96.1049 % completed 
+15:25:49 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  25.628 % (this job) =  45.628 % (total) 
+15:25:52 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  97.1049 % completed 
+15:25:52 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  25.8946 % (this job) =  45.8946 % (total) 
+15:25:53 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  98.105 % completed 
+15:25:53 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  26.1613 % (this job) =  46.1613 % (total) 
+15:25:54 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  99.105 % completed 
+15:25:54 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  26.428 % (this job) =  46.428 % (total) 
+15:25:55 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  99.9969 % completed 
+15:25:55 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  26.6658 % (this job) =  46.6658 % (total) 
+15:25:55 [8]: [JOBQUEUE]: Progress for Job[ 9 ]:  100 % completed 
+15:25:55 [8]: [JOBQUEUE]: Progress Overall:  20 % (accumulated) +  26.6667 % (this job) =  46.6667 % (total) 
+15:25:55 [8]: [JOBQUEUE]: Progress for Job[ 10 ]:  0 % completed 
+15:25:55 [8]: [JOBQUEUE]: Progress Overall:  46.6667 % (accumulated) +  0 % (this job) =  46.6667 % (total) 
+15:25:55 [6]: virtual void Calamares::JobThread::run()
+    Starting job "get_root_username"  (there are 34  left) 
+15:25:55 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/get_root_username/main.py" 
+15:25:55 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from __doc__ "get_root_username" = "Get root and username directly from calamares." 
+15:25:55 [8]: [JOBQUEUE]: Progress for Job[ 10 ]:  0 % completed 
+15:25:55 [8]: [JOBQUEUE]: Progress Overall:  46.6667 % (accumulated) +  0 % (this job) =  46.6667 % (total) 
+sending incremental file list
+/tmp/
+/tmp/chrootpath.txt
+
+sent 172 bytes  received 39 bytes  422.00 bytes/sec
+total size is 28  speedup is 0.13
+sending incremental file list
+/tmp/new_username.txt
+
+sent 153 bytes  received 36 bytes  378.00 bytes/sec
+total size is 10  speedup is 0.05
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 10 ]:  100 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  46.6667 % (accumulated) +  2.22222 % (this job) =  48.8889 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 11 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  48.8889 % (accumulated) +  0 % (this job) =  48.8889 % (total) 
+15:25:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "copy_kernel"  (there are 34  left) 
+15:25:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/copy_kernel/main.py" 
+15:25:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from __doc__ "copy_kernel" = "Copy kernel and install scripts to target system." 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 11 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  48.8889 % (accumulated) +  0 % (this job) =  48.8889 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 11 ]:  100 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  48.8889 % (accumulated) +  2.22222 % (this job) =  51.1111 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 12 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  51.1111 % (accumulated) +  0 % (this job) =  51.1111 % (total) 
+15:25:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Generate machine-id."  (there are 34  left) 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "systemd-machine-id-setup") 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("systemd-machine-id-setup") output:
+ Initializing machine ID from random generator.
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "ln", "-sf", "/etc/machine-id", "/var/lib/dbus/machine-id") 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("ln", "-sf", "/etc/machine-id", "/var/lib/dbus/machine-id") output:
+ 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 12 ]:  100 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  51.1111 % (accumulated) +  2.22222 % (this job) =  53.3333 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 13 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  53.3333 % (accumulated) +  0 % (this job) =  53.3333 % (total) 
+15:25:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "fstab"  (there are 34  left) 
+15:25:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/fstab/main.py" 
+15:25:56 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:25:56 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:25:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "fstab" = "Writing fstab." 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 13 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  53.3333 % (accumulated) +  0 % (this job) =  53.3333 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 13 ]:  100 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  53.3333 % (accumulated) +  2.22222 % (this job) =  55.5556 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 14 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  55.5556 % (accumulated) +  0 % (this job) =  55.5556 % (total) 
+15:25:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set timezone to Europe/Berlin"  (there are 34  left) 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "rm", "-f", "/etc/localtime") 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("rm", "-f", "/etc/localtime") output:
+ 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "ln", "-s", "/usr/share/zoneinfo/Europe/Berlin", "/etc/localtime") 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("ln", "-s", "/usr/share/zoneinfo/Europe/Berlin", "/etc/localtime") output:
+ 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 14 ]:  100 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  55.5556 % (accumulated) +  2.22222 % (this job) =  57.7778 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 15 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  57.7778 % (accumulated) +  0 % (this job) =  57.7778 % (total) 
+15:25:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set keyboard model to pc105, layout to de-"  (there are 34  left) 
+15:25:56 [6]: virtual Calamares::JobResult SetKeyboardLayoutJob::exec()
+    Executing SetKeyboardLayoutJob 
+15:25:56 [6]: QString SetKeyboardLayoutJob::findConvertedKeymap(const QString&) const
+    Looking for converted keymap in "/tmp/calamares-root-1dcubx_9/lib/kbd/keymaps/xkb" 
+15:25:56 [6]: QString SetKeyboardLayoutJob::findLegacyKeymap() const
+    Looking for legacy keymap in QRC 
+15:25:56 [6]:  ..  Found legacy keymap "de" with score 12 
+15:25:56 [6]:  ..  Found legacy keymap "de-latin1" with score 12 
+15:25:56 [6]: bool SetKeyboardLayoutJob::writeVConsoleData(const QString&, const QString&) const
+    Written KEYMAP= "de" to vconsole.conf 
+15:25:56 [6]: bool SetKeyboardLayoutJob::writeX11Data(const QString&) const
+    Written XkbLayout "de" ; XkbModel "pc105" ; XkbVariant "" to X.org file "/tmp/calamares-root-1dcubx_9/etc/X11/xorg.conf.d/00-keyboard.conf" 
+15:25:56 [6]: bool SetKeyboardLayoutJob::writeDefaultKeyboardData(const QString&) const
+    Written XKBMODEL "pc105" ; XKBLAYOUT "de" ; XKBVARIANT "" to /etc/default/keyboard file "/tmp/calamares-root-1dcubx_9/etc/default/keyboard" 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 15 ]:  100 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  57.7778 % (accumulated) +  2.22222 % (this job) =  60 % (total) 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 16 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  60 % (accumulated) +  0 % (this job) =  60 % (total) 
+15:25:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "localecfg"  (there are 34  left) 
+15:25:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/localecfg/main.py" 
+15:25:56 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:25:56 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:25:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "localecfg" = "Configuring locales." 
+15:25:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "locale-gen") 
+15:25:56 [8]: [JOBQUEUE]: Progress for Job[ 16 ]:  0 % completed 
+15:25:56 [8]: [JOBQUEUE]: Progress Overall:  60 % (accumulated) +  0 % (this job) =  60 % (total) 
+15:26:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:26:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("locale-gen") output:
+ Generating locales...
+  en_US.UTF-8... done
+  de_DE.UTF-8... done
+Generation complete.
+15:26:05 [6]: [PYTHON JOB]:  "/tmp/calamares-root-1dcubx_9/etc/locale.gen done" 
+15:26:05 [6]: [PYTHON JOB]:  "/tmp/calamares-root-1dcubx_9/etc/locale.conf done" 
+15:26:05 [6]: [PYTHON JOB]:  "/tmp/calamares-root-1dcubx_9/etc/default done" 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 16 ]:  100 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  60 % (accumulated) +  2.22222 % (this job) =  62.2222 % (total) 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 17 ]:  0 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  62.2222 % (accumulated) +  0 % (this job) =  62.2222 % (total) 
+15:26:05 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Configuring LUKS key file."  (there are 34  left) 
+15:26:05 [6]: virtual Calamares::JobResult LuksBootKeyFileJob::exec()
+    There are 0 LUKS partitions 
+15:26:05 [6]:  ..  Nothing to do for LUKS. 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 17 ]:  100 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  62.2222 % (accumulated) +  2.22222 % (this job) =  64.4444 % (total) 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 18 ]:  0 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  64.4444 % (accumulated) +  0 % (this job) =  64.4444 % (total) 
+15:26:05 [6]: virtual void Calamares::JobThread::run()
+    Starting job "luksopenswaphookcfg"  (there are 34  left) 
+15:26:05 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/luksopenswaphookcfg/main.py" 
+15:26:05 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:26:05 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:26:05 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "luksopenswaphookcfg" = "Configuring encrypted swap." 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 18 ]:  100 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  64.4444 % (accumulated) +  2.22222 % (this job) =  66.6667 % (total) 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 19 ]:  0 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  66.6667 % (accumulated) +  0 % (this job) =  66.6667 % (total) 
+15:26:05 [6]: virtual void Calamares::JobThread::run()
+    Starting job "initcpiocfg"  (there are 34  left) 
+15:26:05 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/initcpiocfg/main.py" 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 19 ]:  0 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  66.6667 % (accumulated) +  0 % (this job) =  66.6667 % (total) 
+15:26:05 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:26:05 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:26:05 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "initcpiocfg" = "Configuring mkinitcpio." 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 19 ]:  0 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  66.6667 % (accumulated) +  0 % (this job) =  66.6667 % (total) 
+15:26:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "sh", "-c", "which plymouth") 
+15:26:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 1 
+15:26:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sh", "-c", "which plymouth") output:
+ which: no plymouth in (/usr/sbin:/usr/bin:/sbin:/bin:/root/bin)
+15:26:05 [6]: [PYTHON JOB]:  "which plymouth exit code: 1" 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 19 ]:  100 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  66.6667 % (accumulated) +  2.22222 % (this job) =  68.8889 % (total) 
+15:26:05 [8]: [JOBQUEUE]: Progress for Job[ 20 ]:  0 % completed 
+15:26:05 [8]: [JOBQUEUE]: Progress Overall:  68.8889 % (accumulated) +  0 % (this job) =  68.8889 % (total) 
+15:26:05 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Creating initramfs with mkinitcpio."  (there are 34  left) 
+15:26:05 [6]: virtual Calamares::JobResult InitcpioJob::exec()
+    Updating initramfs with kernel "linux312" 
+15:26:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "mkinitcpio", "-P") 
+15:26:14 [8]: QML Component (default slideshow) Next slide
+15:26:54 [8]: QML Component (default slideshow) Next slide
+15:27:34 [8]: QML Component (default slideshow) Next slide
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("mkinitcpio", "-P") output:
+ ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+  -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+==> Starting build: 5.8.10-arch1-1
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: xhci_pci
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [resume]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating xz-compressed initcpio image: /boot/initramfs-linux.img
+==> Image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+  -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: 5.8.10-arch1-1
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: aic94xx
+==> WARNING: Possibly missing firmware for module: wd719x
+==> WARNING: Possibly missing firmware for module: xhci_pci
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [resume]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating xz-compressed initcpio image: /boot/initramfs-linux-fallback.img
+==> Image generation successful
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 20 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  68.8889 % (accumulated) +  2.22222 % (this job) =  71.1111 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 21 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  71.1111 % (accumulated) +  0 % (this job) =  71.1111 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Remove live user from target system"  (there are 34  left) 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "userdel", "-f", "-r", "liveuser") 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("userdel", "-f", "-r", "liveuser") output:
+ userdel: liveuser mail spool (/var/spool/mail/liveuser) not found
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 21 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  71.1111 % (accumulated) +  2.22222 % (this job) =  73.3333 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 22 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  73.3333 % (accumulated) +  0 % (this job) =  73.3333 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Create user gr1mwalk3r"  (there are 34  left) 
+15:28:02 [6]: virtual Calamares::JobResult CreateUserJob::exec()
+    [CREATEUSER]: preparing sudoers 
+15:28:02 [6]: virtual Calamares::JobResult CreateUserJob::exec()
+    [CREATEUSER]: preparing groups 
+15:28:02 [6]: virtual Calamares::JobResult CreateUserJob::exec()
+    [CREATEUSER]: creating user 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "useradd", "-m", "-U", "-s", "/bin/bash", "-c", "gr1mwalk3r", "gr1mwalk3r") 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("useradd", "-m", "-U", "-s", "/bin/bash", "-c", "gr1mwalk3r", "gr1mwalk3r") output:
+ 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" "/tmp/calamares-root-1dcubx_9" "usermod" "-aG" "users,adm,lp,power,video,network,storage,wheel,audio,sys,floppy,log,rfkill,optical,scanner" "gr1mwalk3r" 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: "usermod" "-aG" "users,adm,lp,power,video,network,storage,wheel,audio,sys,floppy,log,rfkill,optical,scanner" "gr1mwalk3r" output:
+ 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "chown", "-R", "gr1mwalk3r:gr1mwalk3r", "/home/gr1mwalk3r") 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("chown", "-R", "gr1mwalk3r:gr1mwalk3r", "/home/gr1mwalk3r") output:
+ 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 22 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  73.3333 % (accumulated) +  2.22222 % (this job) =  75.5556 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 23 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  75.5556 % (accumulated) +  0 % (this job) =  75.5556 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set password for user gr1mwalk3r"  (there are 34  left) 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" "/tmp/calamares-root-1dcubx_9" "usermod" "-p" <password> "gr1mwalk3r" 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: "usermod" "-p" <password> "gr1mwalk3r" output:
+ 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 23 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  75.5556 % (accumulated) +  2.22222 % (this job) =  77.7778 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 24 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  77.7778 % (accumulated) +  0 % (this job) =  77.7778 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set password for user root"  (there are 34  left) 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" "/tmp/calamares-root-1dcubx_9" "usermod" "-p" <password> "root" 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: "usermod" "-p" <password> "root" output:
+ 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 24 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  77.7778 % (accumulated) +  2.22222 % (this job) =  80 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 25 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  80 % (accumulated) +  0 % (this job) =  80 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Set hostname gr1mwalk3r-archlinux"  (there are 34  left) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 25 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  80 % (accumulated) +  2.22222 % (this job) =  82.2222 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 26 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  82.2222 % (accumulated) +  0 % (this job) =  82.2222 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "networkcfg"  (there are 34  left) 
+15:28:02 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/networkcfg/main.py" 
+15:28:02 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:02 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:02 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "networkcfg" = "Saving network configuration." 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 26 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  82.2222 % (accumulated) +  0 % (this job) =  82.2222 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 26 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  82.2222 % (accumulated) +  2.22222 % (this job) =  84.4444 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 27 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  84.4444 % (accumulated) +  0 % (this job) =  84.4444 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "packages"  (there are 34  left) 
+15:28:02 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/packages/main.py" 
+15:28:02 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:02 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:02 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "packages" = "Installing packages. Please wait! It may take some time!" 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 27 ]:  100 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  84.4444 % (accumulated) +  2.22222 % (this job) =  86.6667 % (total) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 28 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  86.6667 % (accumulated) +  0 % (this job) =  86.6667 % (total) 
+15:28:02 [6]: virtual void Calamares::JobThread::run()
+    Starting job "hwclock"  (there are 34  left) 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 28 ]:  0 % completed 
+15:28:02 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/hwclock/main.py" 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  86.6667 % (accumulated) +  0 % (this job) =  86.6667 % (total) 
+15:28:02 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:02 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:02 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "hwclock" = "Setting hardware clock." 
+15:28:02 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "hwclock", "--systohc", "--utc") 
+15:28:02 [8]: [JOBQUEUE]: Progress for Job[ 28 ]:  0 % completed 
+15:28:02 [8]: [JOBQUEUE]: Progress Overall:  86.6667 % (accumulated) +  0 % (this job) =  86.6667 % (total) 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("hwclock", "--systohc", "--utc") output:
+ 
+15:28:03 [6]: [PYTHON JOB]:  "Hwclock set using RTC method." 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 28 ]:  100 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  86.6667 % (accumulated) +  2.22222 % (this job) =  88.8889 % (total) 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 29 ]:  0 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  88.8889 % (accumulated) +  0 % (this job) =  88.8889 % (total) 
+15:28:03 [6]: virtual void Calamares::JobThread::run()
+    Starting job "displaymanager"  (there are 34  left) 
+15:28:03 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/displaymanager/main.py" 
+15:28:03 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:03 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:03 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from __doc__ "displaymanager" = "Configure display managers." 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 29 ]:  0 % completed 
+15:28:03 [6]: [PYTHON JOB]:  "slim selected but not installed" 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  88.8889 % (accumulated) +  0 % (this job) =  88.8889 % (total) 
+15:28:03 [6]: [PYTHON JOB]:  "sddm selected but not installed" 
+15:28:03 [6]: [PYTHON JOB]:  "gdm selected but not installed" 
+15:28:03 [6]: [PYTHON JOB]:  "mdm selected but not installed" 
+15:28:03 [6]: [PYTHON JOB]:  "lxdm selected but not installed" 
+15:28:03 [6]: [PYTHON JOB]:  "kdm selected but not installed" 
+15:28:03 [6]: [PYTHON JOB]:  "Using rootMountPoint '/tmp/calamares-root-1dcubx_9'" 
+15:28:03 [6]: [PYTHON JOB]:  ".. selected DE xfce" 
+15:28:03 [6]: [PYTHON JOB]:  "Unsetting autologin." 
+15:28:03 [6]: [PYTHON JOB]:  "found greeter lightdm-gtk-greeter" 
+15:28:03 [6]: [PYTHON JOB]:  "lightdm-gtk-greeter configured as greeter." 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 29 ]:  100 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  88.8889 % (accumulated) +  2.22222 % (this job) =  91.1111 % (total) 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 30 ]:  0 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  91.1111 % (accumulated) +  0 % (this job) =  91.1111 % (total) 
+15:28:03 [6]: virtual void Calamares::JobThread::run()
+    Starting job "grubcfg"  (there are 34  left) 
+15:28:03 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/grubcfg/main.py" 
+15:28:03 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:03 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:03 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "grubcfg" = "Configure GRUB." 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 30 ]:  0 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  91.1111 % (accumulated) +  0 % (this job) =  91.1111 % (total) 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "sh", "-c", "which dracut") 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 1 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sh", "-c", "which dracut") output:
+ which: no dracut in (/usr/sbin:/usr/bin:/sbin:/bin:/root/bin)
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "sh", "-c", "which plymouth") 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 1 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("sh", "-c", "which plymouth") output:
+ which: no plymouth in (/usr/sbin:/usr/bin:/sbin:/bin:/root/bin)
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 30 ]:  100 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  91.1111 % (accumulated) +  2.22222 % (this job) =  93.3333 % (total) 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 31 ]:  0 % completed 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  93.3333 % (accumulated) +  0 % (this job) =  93.3333 % (total) 
+15:28:03 [6]: virtual void Calamares::JobThread::run()
+    Starting job "bootloader"  (there are 34  left) 
+15:28:03 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/bootloader/main.py" 
+15:28:03 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:03 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:03 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "bootloader" = "Install bootloader." 
+15:28:03 [8]: [JOBQUEUE]: Progress for Job[ 31 ]:  0 % completed 
+15:28:03 [6]: [PYTHON JOB]:  "Bootloader: grub (efi)" 
+15:28:03 [8]: [JOBQUEUE]: Progress Overall:  93.3333 % (accumulated) +  0 % (this job) =  93.3333 % (total) 
+15:28:03 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "grub-install", "--target=x86_64-efi", "--efi-directory=/boot/efi", "--bootloader-id=EndeavourOS", "--force") 
+15:28:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("grub-install", "--target=x86_64-efi", "--efi-directory=/boot/efi", "--bootloader-id=EndeavourOS", "--force") output:
+ Installing for x86_64-efi platform.
+Installation finished. No error reported.
+15:28:05 [6]: [PYTHON JOB]:  "UEFI Fallback: True" 
+15:28:05 [6]: [PYTHON JOB]:  "  .. installing 'bootx64.efi' fallback firmware" 
+15:28:05 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "chroot" ("/tmp/calamares-root-1dcubx_9", "grub-mkconfig", "-o", "/boot/grub/grub.cfg") 
+15:28:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("grub-mkconfig", "-o", "/boot/grub/grub.cfg") output:
+ Generating grub configuration file ...
+Found theme: /boot/grub/themes/EndeavourOS/theme.txt
+Found linux image: /boot/vmlinuz-linux
+Found initrd image: /boot/intel-ucode.img /boot/amd-ucode.img /boot/initramfs-linux.img
+Found fallback initrd image(s) in /boot: initramfs-linux-fallback.img
+  WARNING: Failed to connect to lvmetad. Falling back to device scanning.
+Found memtest86+ image: /boot/memtest86+/memtest.bin
+done
+15:28:09 [8]: [JOBQUEUE]: Progress for Job[ 31 ]:  100 % completed 
+15:28:09 [8]: [JOBQUEUE]: Progress Overall:  93.3333 % (accumulated) +  2.22222 % (this job) =  95.5556 % (total) 
+15:28:09 [8]: [JOBQUEUE]: Progress for Job[ 32 ]:  0 % completed 
+15:28:09 [8]: [JOBQUEUE]: Progress Overall:  95.5556 % (accumulated) +  0 % (this job) =  95.5556 % (total) 
+15:28:09 [6]: virtual void Calamares::JobThread::run()
+    Starting job "Shell Processes Job"  (there are 34  left) 
+15:28:09 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Running "env" ("/bin/sh", "-c", "/usr/bin/cleaner_script.sh") 
+15:28:14 [8]: QML Component (default slideshow) Next slide
+15:28:54 [8]: QML Component (default slideshow) Next slide
+15:28:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Finished. Exit code: 0 
+15:28:56 [6]: static CalamaresUtils::ProcessResult CalamaresUtils::System::runCommand(CalamaresUtils::System::RunLocation, const QStringList&, const QString&, const QString&, std::chrono::seconds)
+    Target cmd: ("/bin/sh", "-c", "/usr/bin/cleaner_script.sh") output:
+ sending incremental file list
+/etc/
+/etc/lightdm/
+/etc/lightdm/lightdm-gtk-greeter.conf
+
+sent 466 bytes  received 47 bytes  1,026.00 bytes/sec
+total size is 279  speedup is 0.54
+sending incremental file list
+/etc/sddm.conf.d/kde_settings.conf
+
+sent 373 bytes  received 41 bytes  828.00 bytes/sec
+total size is 198  speedup is 0.48
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5ct
+checking dependencies...
+
+Packages (2) calamares_current-3.2.26-7  qt5ct-1.1-1
+
+Total Removed Size:  132.61 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing calamares_current...
+removing qt5ct...
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating icon theme caches...
+(3/3) Updating the desktop file MIME type cache...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5-base
+checking dependencies...
+:: avahi optionally requires qt5-base: qt5 bindings
+:: cmake optionally requires qt5-base: cmake-gui
+:: doxygen optionally requires qt5-base: for doxywizard
+:: libde265 optionally requires qt5-base: for sherlock265
+:: openal optionally requires qt5-base: alsoft-config GUI Configurator
+:: pinentry optionally requires qt5-base: qt backend
+:: v4l-utils optionally requires qt5-base: for qv4l2
+:: zbar optionally requires qt5-x11extras: for zbar-qt
+
+Packages (59) attica-5.74.0-1  double-conversion-3.1.5-2  karchive-5.74.0-1  kauth-5.74.0-1  kbookmarks-5.74.0-1  kcodecs-5.74.0-1  kcompletion-5.74.0-1  kconfig-5.74.0-1  kconfigwidgets-5.74.0-1  kcoreaddons-5.74.0-1  kcrash-5.74.0-1  kdbusaddons-5.74.0-1  kded-5.74.0-1  kglobalaccel-5.74.0-1  kguiaddons-5.74.0-1  ki18n-5.74.0-1  kiconthemes-5.74.0-1  kio-5.74.1-1  kitemviews-5.74.0-1  kjobwidgets-5.74.0-1  knotifications-5.74.0-1  kparts-5.74.0-1  kpmcore-4.1.0-1  kservice-5.74.0-1  ktextwidgets-5.74.0-1  kwallet-5.74.0-1  kwidgetsaddons-5.74.0-1  kwindowsystem-5.74.0-1  kxmlgui-5.74.0-1  libdbusmenu-qt5-0.9.3+16.04.20160218-5  md4c-0.4.5-1  media-player-info-24-2  minizip-1:1.2.11-4  polkit-qt5-0.113.0-2  pulseaudio-equalizer-13.0-3  python-pyqt5-5.15.1-1  python-pyqt5-sip-12.8.1-1  python-sip-4.19.24-1  qca-2.3.1-2  qt5-declarative-5.15.1-1  qt5-location-5.15.1-1  qt5-multimedia-5.15.1-1  qt5-speech-5.15.1-1  qt5-svg-5.15.1-1  qt5-tools-5.15.1-1  qt5-webchannel-5.15.1-1  qt5-webengine-5.15.1-1  qt5-x11extras-5.15.1-1  qt5-xmlpatterns-5.15.1-1  re2-1:20200801-1  snappy-1.1.8-2  solid-5.74.0-1  sonnet-5.74.0-1  tslib-1.22-1  xcb-util-image-0.4.0-3  xcb-util-keysyms-0.4.0-3  xcb-util-renderutil-0.3.9-3  xcb-util-wm-0.4.1-3  qt5-base-5.15.1-1
+
+Total Removed Size:  403.72 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing qt5-webengine...
+removing snappy...
+removing re2...
+removing minizip...
+removing kparts...
+removing qt5-webchannel...
+removing qt5-location...
+removing pulseaudio-equalizer...
+removing python-sip...
+removing kpmcore...
+removing kio...
+removing kwallet...
+removing knotifications...
+removing kded...
+removing kservice...
+removing kbookmarks...
+removing kxmlgui...
+removing ktextwidgets...
+removing qt5-speech...
+removing kjobwidgets...
+removing kiconthemes...
+removing kglobalaccel...
+removing kdbusaddons...
+removing kcrash...
+removing kwindowsystem...
+removing kconfigwidgets...
+removing ki18n...
+removing kguiaddons...
+removing kcompletion...
+removing kauth...
+removing sonnet...
+removing solid...
+removing media-player-info...
+removing qt5-xmlpatterns...
+removing qt5-x11extras...
+removing qt5-tools...
+removing qt5-svg...
+removing qt5-multimedia...
+removing qt5-declarative...
+removing qca...
+removing python-pyqt5...
+removing python-pyqt5-sip...
+removing polkit-qt5...
+removing libdbusmenu-qt5...
+removing kwidgetsaddons...
+removing kitemviews...
+removing kcoreaddons...
+removing kconfig...
+removing kcodecs...
+removing karchive...
+removing attica...
+removing qt5-base...
+removing xcb-util-wm...
+removing xcb-util-renderutil...
+removing xcb-util-keysyms...
+removing xcb-util-image...
+removing tslib...
+removing md4c...
+removing double-conversion...
+:: Running post-transaction hooks...
+(1/7) Updating udev hardware database...
+(2/7) Reloading device manager configuration...
+Running in chroot, ignoring request.
+(3/7) Arming ConditionNeedsUpdate...
+(4/7) Reloading system bus configuration...
+  Skipped: Current root is not booted.
+(5/7) Updating icon theme caches...
+(6/7) Updating the desktop file MIME type cache...
+(7/7) Updating the MIME type database...
+error: target not found: calamares_current
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : calamares_current
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : arch-install-scripts
+checking dependencies...
+
+Packages (1) arch-install-scripts-23-2
+
+Total Removed Size:  0.04 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing arch-install-scripts...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: target not found: qt5-svg
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5-svg
+error: target not found: qt5-webengine
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5-webengine
+error: target not found: kpmcore
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kpmcore
+error: target not found: kdbusaddons
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kdbusaddons
+error: target not found: kcrash
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kcrash
+error: target not found: qt5-declarative
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5-declarative
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : squashfs-tools
+checking dependencies...
+:: file-roller optionally requires squashfs-tools: squashfs image support
+
+Packages (1) squashfs-tools-4.4-2
+
+Total Removed Size:  0.31 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing squashfs-tools...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : ddrescue
+checking dependencies...
+
+Packages (1) ddrescue-1.25-1
+
+Total Removed Size:  0.25 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Running pre-transaction hooks...
+(1/1) Removing old entries from the info directory file...
+:: Processing package changes...
+removing ddrescue...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : dd_rescue
+checking dependencies...
+
+Packages (1) dd_rescue-1.99.8-3
+
+Total Removed Size:  0.30 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing dd_rescue...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : testdisk
+checking dependencies...
+
+Packages (1) testdisk-7.1-2
+
+Total Removed Size:  1.57 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing testdisk...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: target not found: qt5-tools
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5-tools
+error: target not found: kparts
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kparts
+error: target not found: polkit-qt5
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : polkit-qt5
+error: target not found: qt5-xmlpatterns
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : qt5-xmlpatterns
+error: target not found: python-pyqt5
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : python-pyqt5
+error: target not found: python-sip-pyqt5
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : python-sip-pyqt5
+error: target not found: pyqt5-common
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : pyqt5-common
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : extra-cmake-modules
+checking dependencies...
+
+Packages (1) extra-cmake-modules-5.74.0-1
+
+Total Removed Size:  0.77 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing extra-cmake-modules...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : cmake
+checking dependencies...
+
+Packages (3) jsoncpp-1.9.3-1  rhash-1.4.0-1  cmake-3.18.2-1
+
+Total Removed Size:  45.19 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing cmake...
+removing rhash...
+removing jsoncpp...
+:: Running post-transaction hooks...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Updating icon theme caches...
+(3/4) Updating the desktop file MIME type cache...
+(4/4) Updating the MIME type database...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : elinks
+checking dependencies...
+
+Packages (3) lua51-5.1.5-9  tre-0.8.0-6  elinks-0.13-22
+
+Total Removed Size:  3.80 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing elinks...
+removing tre...
+removing lua51...
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating the desktop file MIME type cache...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : yaml-cpp
+checking dependencies...
+
+Packages (1) yaml-cpp-0.6.3-2
+
+Total Removed Size:  0.49 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing yaml-cpp...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : syslinux
+checking dependencies...
+
+Packages (1) syslinux-6.04.pre2.r11.gbf6db5b4-3
+
+Total Removed Size:  4.23 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing syslinux...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: target not found: solid
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : solid
+error: target not found: kwidgetsaddons
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kwidgetsaddons
+error: target not found: kservice
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kservice
+error: target not found: ki18n
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : ki18n
+error: target not found: kcoreaddons
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kcoreaddons
+error: target not found: kconfig
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : kconfig
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : clonezilla
+checking dependencies...
+:: file-roller optionally requires lrzip: lrzip archive support
+:: mkinitcpio optionally requires lzop: Use lzo compression for the initramfs image
+
+Packages (11) drbl-2.30.5-1  ecryptfs-utils-111-4  lbzip2-2.5-5  lrzip-0.631-3  lzop-1.04-3  pbzip2-1.1.13-3  pigz-2.4-2  pixz-1.0.7-2  screen-4.8.0-2  sshfs-3.7.0-1  clonezilla-3.35.2-3
+
+Total Removed Size:  10.90 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Running pre-transaction hooks...
+(1/1) Removing old entries from the info directory file...
+:: Processing package changes...
+removing clonezilla...
+removing sshfs...
+removing screen...
+removing pixz...
+removing pigz...
+removing pbzip2...
+removing lzop...
+removing lrzip...
+removing lbzip2...
+removing ecryptfs-utils...
+removing drbl...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : partclone
+checking dependencies...
+
+Packages (2) progsreiserfs-0.3.0.5-10  partclone-0.3.15-1
+
+Total Removed Size:  2.10 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing partclone...
+removing progsreiserfs...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : partimage
+checking dependencies...
+
+Packages (1) partimage-0.6.9-13
+
+Total Removed Size:  0.77 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing partimage...
+:: Running post-transaction hooks...
+(1/2) Reloading system manager configuration...
+  Skipped: Current root is not booted.
+(2/2) Arming ConditionNeedsUpdate...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : ckbcomp
+checking dependencies...
+
+Packages (1) ckbcomp-1.195-1
+
+Total Removed Size:  0.14 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing ckbcomp...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: target not found: gnome-boxes
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : gnome-boxes
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : xcompmgr
+checking dependencies...
+
+Packages (1) xcompmgr-1.1.8-2
+
+Total Removed Size:  0.04 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing xcompmgr...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: target not found: epiphany
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : epiphany
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : memtest86+
+checking dependencies...
+
+Packages (1) memtest86+-5.01-4
+
+Total Removed Size:  0.14 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing memtest86+...
+Root      : /
+Conf File : /etc/pacman.conf
+DB Path   : /var/lib/pacman/
+Cache Dirs: /var/cache/pacman/pkg/  
+Hook Dirs : /usr/share/libalpm/hooks/  /etc/pacman.d/hooks/  
+Lock File : /var/lib/pacman/db.lck
+Log File  : /var/log/pacman.log
+GPG Dir   : /etc/pacman.d/gnupg/
+Targets   : mkinitcpio-archiso
+checking dependencies...
+
+Packages (1) mkinitcpio-archiso-47.1-1
+
+Total Removed Size:  0.02 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing mkinitcpio-archiso...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Detected country: Germany
+Arch mirrorlist by reflector:
+################################################################################
+################# Arch Linux mirrorlist generated by Reflector #################
+################################################################################
+
+# With:       reflector -phttps -f10 -l20 --sort rate -a2 -c DE
+# When:       2020-10-10 13:28:22 UTC
+# From:       https://www.archlinux.org/mirrors/status/json/
+# Retrieved:  2020-10-10 13:28:20 UTC
+# Last Check: 2020-10-10 11:43:21 UTC
+
+Server = https://mirror.bethselamin.de/$repo/os/$arch
+Server = https://arch.jensgutermuth.de/$repo/os/$arch
+Server = https://mirror.pkgbuild.com/$repo/os/$arch
+Server = https://mirror.orbit-os.com/archlinux/$repo/os/$arch
+Server = https://mirror.ubrco.de/archlinux/$repo/os/$arch
+Server = https://mirror.chaoticum.net/arch/$repo/os/$arch
+Server = https://mirror.f4st.host/archlinux/$repo/os/$arch
+Server = https://packages.oth-regensburg.de/archlinux/$repo/os/$arch
+Server = https://phinau.de/arch/$repo/os/$arch
+Server = https://mirror.satis-faction.de/archlinux/$repo/os/$arch
+
+Failed to enable unit, unit org.cups.cupsd.service does not exist.
+Created symlink /etc/systemd/system/dbus-org.freedesktop.Avahi.service -> /usr/lib/systemd/system/avahi-daemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/avahi-daemon.service -> /usr/lib/systemd/system/avahi-daemon.service.
+Created symlink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket -> /usr/lib/systemd/system/avahi-daemon.socket.
+Created symlink /etc/systemd/system/multi-user.target.wants/tlp.service -> /usr/lib/systemd/system/tlp.service.
+Failed to enable unit, unit gdm.service does not exist.
+Created symlink /etc/systemd/system/display-manager.service -> /usr/lib/systemd/system/lightdm.service.
+Failed to enable unit, unit sddm.service does not exist.
+Removed /etc/systemd/system/default.target.
+Failed to disable unit, unit pacman-init.service does not exist.
+
+Packages (1) virtualbox-guest-dkms-6.1.14-1
+
+Total Removed Size:  0.10 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Running pre-transaction hooks...
+(1/1) Remove DKMS modules
+:: Processing package changes...
+removing virtualbox-guest-dkms...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+
+Packages (1) virtualbox-guest-utils-6.1.14-1
+
+Total Removed Size:  9.04 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing virtualbox-guest-utils...
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+  Skipped: Current root is not booted.
+(2/3) Reloading device manager configuration...
+Running in chroot, ignoring request.
+(3/3) Arming ConditionNeedsUpdate...
+
+Packages (4) libdnet-1.12-12  libmspack-1:0.10.1alpha-3  uriparser-0.9.4-1  open-vm-tools-6:11.1.5-2
+
+Total Removed Size:  3.76 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing open-vm-tools...
+removing libdnet...
+removing libmspack...
+removing uriparser...
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+  Skipped: Current root is not booted.
+(2/3) Reloading device manager configuration...
+Running in chroot, ignoring request.
+(3/3) Arming ConditionNeedsUpdate...
+
+Packages (1) xf86-input-vmmouse-13.1.0-5
+
+Total Removed Size:  0.04 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing xf86-input-vmmouse...
+:: Running post-transaction hooks...
+(1/2) Reloading device manager configuration...
+Running in chroot, ignoring request.
+(2/2) Arming ConditionNeedsUpdate...
+
+Packages (1) xf86-video-vmware-13.3.0-2
+
+Total Removed Size:  0.19 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing xf86-video-vmware...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: target not found: gnome-software
+error: target not found: discover
+===> INFO: grub-tools / grub-fix-initrd-generation:
+===> INFO: /etc/grub.d/30_os-prober changed. See file /var/log/grub-fix-initrd-generation.log.
+===> INFO: /etc/grub.d/10_linux changed. See file /var/log/grub-fix-initrd-generation.log.
+===> INFO: /usr/lib/linux-boot-probes/mounted/40grub2 changed. See file /var/log/grub-fix-initrd-generation.log.
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/EndeavourOS/theme.txt
+Found linux image: /boot/vmlinuz-linux
+Found initrd image: /boot/amd-ucode.img /boot/initramfs-linux.img
+Found fallback initrd image(s) in /boot: initramfs-linux-fallback.img
+  WARNING: Failed to connect to lvmetad. Falling back to device scanning.
+done
+warning: dependency cycle detected:
+warning: eglexternalplatform will be removed after its nvidia-utils dependency
+checking dependencies...
+
+Packages (2) libxvmc-1.0.12-3  xf86-video-intel-1:2.99.917+908+g7181c5a4-1
+
+Total Removed Size:  2.30 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing xf86-video-intel...
+removing libxvmc...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+checking dependencies...
+
+Packages (1) broadcom-wl-dkms-6.30.223.271-22
+
+Total Removed Size:  7.60 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Running pre-transaction hooks...
+(1/1) Remove DKMS modules
+==> dkms remove --no-depmod -m broadcom-wl -v 6.30.223.271 -k 5.8.10-arch1-1
+==> depmod 5.8.10-arch1-1
+:: Processing package changes...
+removing broadcom-wl-dkms...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+15:28:56 [8]: [JOBQUEUE]: Progress for Job[ 32 ]:  100 % completed 
+15:28:56 [8]: [JOBQUEUE]: Progress Overall:  95.5556 % (accumulated) +  2.22222 % (this job) =  97.7778 % (total) 
+15:28:56 [8]: [JOBQUEUE]: Progress for Job[ 33 ]:  0 % completed 
+15:28:56 [8]: [JOBQUEUE]: Progress Overall:  97.7778 % (accumulated) +  0 % (this job) =  97.7778 % (total) 
+15:28:56 [6]: virtual void Calamares::JobThread::run()
+    Starting job "umount"  (there are 34  left) 
+15:28:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job file "/usr/lib/calamares/modules/umount/main.py" 
+15:28:56 [6]: boost::python::api::object CalamaresPython::gettext_path()
+    Determining gettext path from ("/root", "/usr/bin", "/usr/share/locale") 
+15:28:56 [6]:  ..  Found "en_US" in "/usr/share/locale/en_US" 
+15:28:56 [6]: virtual Calamares::JobResult Calamares::PythonJob::exec()
+    Job description from pretty_name "umount" = "Unmount file systems." 
+15:28:56 [8]: [JOBQUEUE]: Progress for Job[ 33 ]:  0 % completed 
+15:28:56 [8]: [JOBQUEUE]: Progress Overall:  97.7778 % (accumulated) +  0 % (this job) =  97.7778 % (total) 
+15:28:57 [8]: [JOBQUEUE]: Progress for Job[ 33 ]:  100 % completed 
+15:28:57 [8]: [JOBQUEUE]: Progress Overall:  97.7778 % (accumulated) +  2.22222 % (this job) =  100 % (total) 
+15:28:57 [8]: QML Component (default slideshow) deactivated
+15:28:57 [6]: void FinishedPage::setUpRestart()
+    FinishedPage::setUpRestart(), Quit button setup= "user-unchecked" command= "systemctl -i reboot" 
+15:29:08 [8]: Shutting down Calamares... 
+15:29:08 [8]:  ..  Finished shutdown. 
+
+############## Install finished (UTC): 2020-10-10 13:29
+
